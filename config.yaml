@@ -1,0 +1,41 @@
+# Smart File Organizer Configuration
+
+# Directories (CHANGE THESE TO YOUR REAL PATHS)
+watch_directory: "C:/Users/Ruthvik_Anne/Downloads"
+organized_directory: "C:/Users/Ruthvik_Anne/Documents/SmartOrganized"
+
+# AI Settings
+use_ai: true
+confidence_threshold: 0.5
+
+# Models
+models:
+  image_classifier: "models/efficientnet_lite0.tflite"
+  sentence_encoder: "all-MiniLM-L6-v2"
+  whisper: "tiny"
+
+# Category Rules
+categories:
+  # Added 'epub', 'mobi' for novels
+  Documents: ["pdf", "docx", "doc", "txt", "odt", "rtf", "epub", "mobi"]
+  Spreadsheets: ["xlsx", "xls", "csv", "ods"]
+  Presentations: ["pptx", "ppt", "odp"]
+  Images: ["jpg", "jpeg", "png", "gif", "bmp", "svg", "webp", "heic"]
+  Videos: ["mp4", "avi", "mkv", "mov", "wmv", "flv", "webm"]
+  Audio: ["mp3", "wav", "flac", "aac", "ogg", "m4a", "wma"]
+  Archives: ["zip", "rar", "7z", "tar", "gz", "bz2", "xz"]
+  Code: ["py", "js", "java", "cpp", "c", "cs", "go", "rs", "rb", "php", "html", "css"]
+
+# Watcher settings
+watcher:
+  recursive: true
+  ignore_patterns:
+    - ".*"
+    - "~*"
+    - "_organized"
+  debounce_seconds: 2
+
+# Database
+database:
+  name: "file_index.db"
+  backup_enabled: true

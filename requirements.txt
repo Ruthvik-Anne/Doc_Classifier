@@ -1,0 +1,38 @@
+# Core dependencies
+mediapipe
+sentence-transformers
+openai-whisper
+python-magic
+python-magic-bin; platform_system == "Windows"
+
+# File processing
+pymupdf
+python-docx
+Pillow
+opencv-python
+
+# ML/AI
+scikit-learn
+torch
+torchvision
+torchaudio
+
+# Database
+sqlite-utils
+
+# File watching
+watchdog
+
+# Configuration
+pyyaml
+
+# CLI
+click
+tqdm
+colorama
+# For scripts/search.py output formatting
+tabulate
+
+setuptools
+numpy
+keybert
