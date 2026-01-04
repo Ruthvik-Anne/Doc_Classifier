@@ -2,7 +2,7 @@
 
 # Directories (CHANGE THESE TO YOUR REAL PATHS)
 watch_directory: "C:/Users/Ruthvik_Anne/Downloads"
-organized_directory: "C:/Users/Ruthvik_Anne/Documents/SmartOrganized"
+organized_directory: "C:/Users/Ruthvik_Anne/Downloads/Organized"
 
 # AI Settings
 use_ai: true
@@ -32,7 +32,6 @@ watcher:
   ignore_patterns:
     - ".*"
     - "~*"
-    - "_organized"
   debounce_seconds: 2
 
 # Database

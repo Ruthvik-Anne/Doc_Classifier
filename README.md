@@ -29,32 +29,13 @@ source venv/bin/activate # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Download AI models:
-```bash
-# Create models directory
-mkdir -p models
-
-# Download MediaPipe EfficientNet-Lite0 model
-wget https://storage.googleapis.com/mediapipe-models/image_classifier/efficientnet_lite0/float32/1/efficientnet_lite0.tflite -P models/
-```
-
-## Configuration
-
-Edit `config.yaml` to customize:
-
-```
-watch_directory: "/home/ruthvik/Downloads"
-organized_directory: "/home/ruthvik/Documents/Organized"
-use_ai: true
-confidence_threshold: 0.5
-```
-
 ## Usage
 
 ### One-time Organization
 ```bash
 python scripts/organize.py
 ```
+Enter Folder path
 
 ### Auto-watch Mode
 ```bash
