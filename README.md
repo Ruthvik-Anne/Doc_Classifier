@@ -18,7 +18,7 @@ git clone https://github.com/yourusername/smart-file-organizer.git
 cd smart-file-organizer
 ```
 
-2. Create virtual environment:
+2. Create virtual environment (optional):
 ```bash
 python -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
@@ -66,3 +66,4 @@ Code/
 ## License
 
 MIT License
+
